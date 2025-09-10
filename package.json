@@ -1,0 +1,11 @@
+{
+  "name": "inngest-dev-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "inngest dev --port ${PORT:-8080} --no-open"
+  },
+  "dependencies": {
+    "inngest": "^3.11.0"
+  }
+}
