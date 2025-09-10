@@ -1,9 +1,5 @@
 
----
-
-## local/compose.yml  (run Dev Server locally with `.env`)
-
-```yaml
+# local/compose.yml (run Dev Server locally with `.env`)
 # local/compose.yml
 services:
   inngest-dev:
