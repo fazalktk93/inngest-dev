@@ -1,0 +1,16 @@
+
+---
+
+## local/compose.yml  (run Dev Server locally with `.env`)
+
+```yaml
+# local/compose.yml
+services:
+  inngest-dev:
+    image: docker.io/inngest/inngest:latest
+    ports:
+      - "8288:8288"
+    environment:
+      TARGET_URL: ${TARGET_URL}
+    command: >
+      sh -lc 'inngest dev -u "$${TARGET_URL}"'
