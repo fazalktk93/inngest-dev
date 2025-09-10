@@ -19,7 +19,9 @@ DigitalOcean App Platform and points it at your app’s `/api/inngest`.
 2. Push to GitHub.
 3. Add this button to your README (optional):
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/zasghar26/inngest_template/tree/main&spec=.do/deploy.template.yaml)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](
+https://cloud.digitalocean.com/apps/new?repo=https://github.com/fazalktk93/inngest-dev/tree/main&spec=.do/deploy.template.yaml
+)
 
 When clicked, App Platform preloads `.do/deploy.template.yaml`. Confirm `TARGET_URL` and deploy.
 
