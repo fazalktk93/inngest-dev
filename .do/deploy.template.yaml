@@ -1,0 +1,20 @@
+# .do/deploy.template.yaml
+# App Platform reads this when a "Deploy to DO" button is clicked.
+# Keep the standard app spec under top-level `spec:`.
+spec:
+  name: inngest-dev
+  region: nyc
+  services:
+    - name: dev
+      http_port: 8288
+      instance_size_slug: basic-xxs
+      image:
+        registry_type: DOCKER_HUB
+        registry: docker.io
+        repository: inngest/inngest
+        tag: latest
+      envs:
+        - key: TARGET_URL
+          value: https://REPLACE-ME.example.com/api/inngest
+      run_command: >-
+        sh -lc 'inngest dev -u "$TARGET_URL"'
